@@ -6,5 +6,5 @@ int main(){
 
     scanf("%c",&A);
 
-    printf("You enetred: %c",A);
+    printf("You entred: %c",A);
 }
