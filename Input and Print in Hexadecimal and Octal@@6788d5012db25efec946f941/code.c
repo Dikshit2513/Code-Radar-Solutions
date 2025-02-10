@@ -6,6 +6,6 @@ int main(){
 
     sacnf("%d",&num);
 
-    printf("%X\n",num);
-    printf("%o",num);
+    printf("Hexadecimal: %X\n",num);
+    printf("Octal: %o",num);
 }
