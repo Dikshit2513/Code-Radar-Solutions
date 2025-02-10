@@ -6,5 +6,5 @@ int main(){
 
     scanf("%f",&num);
 
-    printf("You enetred: %.4f",num);
+    printf("You entered: %.4f",num);
 }
