@@ -8,5 +8,5 @@ int main(){
 
     mul=A*B;
 
-    printf("Product: %f",mul);
+    printf("Product: %.2f",mul);
 }
