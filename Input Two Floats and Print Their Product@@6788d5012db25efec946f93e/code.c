@@ -4,7 +4,7 @@ int main(){
 
     float A,B,mul;
 
-    scanf("%f%f",&A&B);
+    scanf("%f%f",&A,&B);
 
     mul=A*B;
 
