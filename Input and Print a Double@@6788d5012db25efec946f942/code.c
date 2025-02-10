@@ -4,7 +4,7 @@ int main(){
 
     float num;
 
-    sacnf("%f",&num);
+    scanf("%f",&num);
 
     printf("You enetred: %.4f",num);
 }
