@@ -8,5 +8,5 @@ int main(){
 
     avg=(A+B+C)/3;
 
-    printf("Average: %f",avg);
+    printf("Average: %.2f",avg);
 }
