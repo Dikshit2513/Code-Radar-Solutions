@@ -10,5 +10,6 @@ int main(){
     printf("False");
 
     else
-    printf()
+    printf("True");
+    return 0;
 }
