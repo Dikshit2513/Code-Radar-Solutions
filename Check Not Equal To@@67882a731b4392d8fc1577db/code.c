@@ -6,10 +6,10 @@ int main(){
 
     scanf("%d%d",&num1,&num1);
 
-    if(num1!=num2)
-    printf("True");
+    if(num1==num2)
+    printf("False");
 
     else
-    printf("False");
+    printf("True");
     return 0;
 }
