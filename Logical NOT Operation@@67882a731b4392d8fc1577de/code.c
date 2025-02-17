@@ -5,7 +5,7 @@ int main(){
     scanf("%d",&num1);
 
 
-    if(num1 < 0)
+    if(num1 <= 0)
     printf("True");
 
     else
