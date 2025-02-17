@@ -5,5 +5,8 @@ int main(){
     scanf("%d %d",&n,&m);
 
     if(n>m);
-    printf(n);
+    printf("%d",n);
+
+    else
+    printf("%d",m);
 }
