@@ -6,10 +6,10 @@ int main(){
 
     scanf("%c",&n);
 
-    if(n=='A')
+    if(n>='A' && n<='Z')
     printf("Uppercase");
 
-    else if(n=='z')
+    else if(n>='a' && n<='z')
     printf("Lowercase");
 
     else
