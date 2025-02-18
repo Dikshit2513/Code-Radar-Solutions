@@ -6,7 +6,7 @@ int main(){
  scanf("%d",&n);
 
  for(c=1;c<=n;c++){
-    printf("%d\t",c);
+    printf("%d ",c);
  }
 
 }
