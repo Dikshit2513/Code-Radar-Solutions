@@ -8,6 +8,6 @@ int main(){
     for(c=1;c<=10;c++){
         table=n*c;
     
-    printf("%d X %d = %d\n",n,c,table);
+    printf("%d x %d = %d\n",n,c,table);
     }
 }
