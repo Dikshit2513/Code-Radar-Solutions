@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main(){
+
+    int SP,CP;
+
+    scanf("%d %d",&SP,&CP);
+
+    if(CP < SP){
+        printf("Profit");
+    }
+
+    else if(CP > SP){
+        printf("Loss");
+    }
+
+    else{
+        printf("No Profit No Loss");
+    }
+}
