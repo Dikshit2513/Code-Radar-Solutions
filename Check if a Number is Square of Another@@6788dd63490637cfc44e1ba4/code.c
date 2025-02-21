@@ -6,7 +6,7 @@ int main(){
 
     scanf("%d %d",&n,&m);
 
-    if(n*n==m){
+    if(m==n*n){
         printf("Yes");
     }
 
