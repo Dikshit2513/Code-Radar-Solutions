@@ -7,7 +7,6 @@ int main(){
     scanf("%d",&c);
 
     if(c=='R'){
-
         printf("Stop");
     }
 
