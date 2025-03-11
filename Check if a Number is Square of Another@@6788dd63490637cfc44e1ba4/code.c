@@ -1,18 +1,11 @@
+// Your code here...
 #include<stdio.h>
-
 int main(){
-
-    int n,m;
-
-    scanf("%d %d",&n,&m);
-
-    if(n*n==m){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if(a==b*b){
         printf("Yes");
-    }
-
-    else{
+    }else{
         printf("No");
     }
-
 }
-
