@@ -1,32 +1,35 @@
 #include <stdio.h>
 
-#define MAX_STUDENTS 100
-
-
-struct Student {
-    int roll_number;
+struct student {
+    int rollNumber;
     char name[50];
     float marks;
 };
 
 int main() {
-    int N, i;
-    struct Student students[MAX_STUDENTS];
-    float total_marks = 0.0;
-
+    int n;
+    scanf("%d", &n);
+    struct student students[n];
     
-    printf("Enter the number of students: ");
-    scanf("%d", &N);
-
-    for (i = 0; i < N; i++) {
-        printf("Enter roll number, name, and marks for student %d: ", i + 1);
-        scanf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
-        total_marks += students[i].marks;  
+    for (int i = 0; i < n; i++) {
+        scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);
     }
 
+    int a;
+    scanf("%d", &a);
+
+    int found = 0; 
+    for (int i = 0; i < n; i++) {
+        if (students[i].rollNumber == a) {
+            printf("Roll Number: %d, Name: %s, Marks: %.2f\n", students[i].rollNumber, students[i].name, students[i].marks);
+            found = 1;
+            break;
+        }
+    }
     
-    float average_marks = total_marks / N;
-    printf("Average Marks: %.2f\n", average_marks);
+    if (!found) {
+        printf("Student not found\n");
+    }
 
     return 0;
 }
