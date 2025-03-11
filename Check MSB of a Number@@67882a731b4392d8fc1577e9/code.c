@@ -1,13 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    int n;
-    scanf("%d",&n);
+char* welcome() {
+    return "Welcome to Code Radar!";
+}
 
-    if(n & 0);
-    printf("Set");
-
-    else
-    printf("Not Set");
-
+int main() {
+    int a;
+    scanf("%d",&a);
+    int msb_mask=1<<31;
+    if(a & msb_mask){
+        printf("Set");
+    }
+    else{
+        printf("Not Set");
+    }
+    return 0;
 }
