@@ -1,13 +1,16 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+char* welcome() {
+    return "Welcome to Code Radar!";
+}
 
-    int n;
-    scanf("%d",&n);
-
-    if(n%4 == 0 || n%400 == 0 && n%100 != 0)
-    printf("Leap Year");
-
-    else
-    printf("Not a Leap Year");
+int main() {
+    int year;
+    scanf("%d",&year);
+    if(year%4==0&&(!(year%100==0))||year%400==0){
+        printf("Leap Year");
+    }else{
+        printf("Not a Leap Year");
+    }
+    return 0;
 }
