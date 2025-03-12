@@ -7,6 +7,7 @@ char* welcome() {
 int main() {
     int num;
     scanf("%d",&num);
-    printf("%d",~num);
+    int trailing_zeroes=__builtin_ctz(num);
+    printf("%d", trailing_zeroes);
     return 0;
 }
