@@ -1,21 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <ctype.h>
 
-int main(){
-   int a;
-   int is_prime=1;
-   scanf("%d",&a);
-   if(a==1||a==0){
-    is_prime=0;
-   }else{
-    for(int i=2;i*i<=a;i++){
-        if(a%i==0){
-            is_prime=0;
+int main() {
+    char str[100];
+    scanf("%[^\n]",str);
+    for (int i = 0; str[i] != '\0'; i++) {
+        char c = tolower(str[i]); 
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || !isalpha(c)) {
+            printf("%c", str[i]); 
         }
     }
-   }
-   if(is_prime){
-    printf("Prime");
-   }else{
-    printf("Not Prime");
-   }
+    
+    return 0;
 }
